@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Nunito:wght@200;300;400;500;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    margin: 0;
+    font-size: 1.3125rem;
+    font-weight: 300;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #000;
+    border-top: .0625em solid #b8b8b8;
+    display: block;
+    padding: .9375em;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #d7deea;
+    border-right: .125em solid #b8b8b8;
+    width: 20.625em;
+    height: 100vh;
+    width: 300px;
+}
+
+nav header {
+    padding: .9375em;
+}
+
+main {
+    background-color: #eceae0;
+    flex: 1;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+section {
+    padding: 1.375em;
+    line-height: 1.5;
+}
+
+section h3 {
+    font-weight: 700;
+}
+
+
+section .anatomy {
+    background-color: #dfdfdf;
+    font-size: 1.3125rem;
+    font-weight: 300;
+    line-height: .8;
+    color: #969696;
+    max-width: fit-content;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    
+}
+
+
+section .overflow .shade {
+    background-color: #cacaca;
+    font-weight: 500;
+}
+
+header {
+    font-size: 1.6125rem;
+    font-weight: 900;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    nav {
+        border-right: none;
+        border-bottom: .125em solid #b8b8b8;
+        height: 12.5em;
+        overflow-y: scroll;
+        width: 100%;
+    }
+
+    main {
+        height: auto;
+        width: 100%;
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tdp_styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Technical Documentation Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>HTML Documentation</header>
+      <a href="#Introduction" class="nav-link">Introduction</a>
+      <a href="#Prerequisites" class="nav-link">Prerequisites</a>
+      <a href="#Anatomy_of_an_HTML_document" class="nav-link">Anatomy of an HTML document</a>
+      <a href="#HTML_elements" class="nav-link">HTML elements</a>
+      <a href="#Modules" class="nav-link">Modules</a>
+      <a href="#Solving_common_HTML_problems" class="nav-link">Solving common HTML problems</a>
+      <a href="#See_also" class="nav-link">See also</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+                <p>
+                To build websites, you should know about HTML — the fundamental
+                technology used to define the structure of a webpage. HTML is used to
+                specify whether your web content should be recognized as a paragraph,
+                list, heading, link, image, multimedia player, form, or one of many
+                other available elements or even a new element that you define.
+                </p>
+        </section>
+        <section class="main-section" id="Prerequisites">
+            <header>Prerequisites</header>
+                <p>Before starting this topic, you should have at least basic familiarity with using computers and using the web passively (i.e. just looking at it, consuming the content). You should have a basic work environment set up as detailed in Installing basic software, and understand how to create and manage files, as detailed in Dealing with files — both are parts of our Getting started with the web complete beginner's module.</p>
+
+                <p>It is recommended that you work through Getting started with the web before attempting this topic. However, this isn't absolutely necessary; much of what is covered in the HTML basics article is also covered in our Introduction to HTML module, albeit in a lot more detail.</p>
+                    
+                <p>After learning HTML, you can then move on to learning about more advanced topics such as:</p>
+                <ul>
+                    <li>
+                    CSS, and how to use it to style HTML (for example alter your text size and fonts used, add borders and drop shadows, layout your page with multiple columns, add animations and other visual effects.)
+                    </li>
+                    <li>
+                    JavaScript, and how to use it to add dynamic functionality to web pages (for example find your location and plot it on a map, make UI elements appear/disappear when you toggle a button, save users' data locally on their computers, and much more.)
+                    </li>
+                </ul>
+        </section>
+        <section class="main-section" id="Anatomy_of_an_HTML_document">
+            <header>Anatomy of an HTML document</header>
+                <p>how individual elements are combined to form an entire HTML page</p>
+                <div class="anatomy">
+                    <code>&nbsp&lt;!DOCTYPE html&gt;<br></code>
+                    <code>&nbsp&nbsp&nbsp&lt;html&gt;<br></code>
+                    <code>&nbsp&nbsp&nbsp&nbsp&nbsp&lt;head&gt;<br></code>
+                    <code>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;meta charset="uft-8"&gt;<br></code>
+                    <code>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;title&gt; test page&lt;/title&gt;<br></code>
+                    <code>&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/head&gt;<br></code>
+                    <code>&nbsp&nbsp&nbsp&nbsp&nbsp&lt;body&gt;<br></code>
+                    <code>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&lt;img src="images/firefox-icon.png" alt="My test image"&gt;<br></code>
+                    <code>&nbsp&nbsp&nbsp&nbsp&nbsp&lt;/body&gt;<br></code>
+                    <code>&nbsp&nbsp&nbsp&lt;/html&gt;<br></code>
+                </div>
+        </section>               
+        <section class="main-section" id="HTML_elements">
+            <header>HTML elements</header> 
+                <div class="overflow">           
+                    <ul>
+                        <li>
+                            <code><a class="shade">&lt;!DOCTYPE html&gt;</a></code>— doctype. It is a required preamble. In the mists of time, when HTML was young (around 1991/92), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. However these days, they don't do much and are basically just needed to make sure your document behaves correctly. That's all you need to know for now.
+                        </li>
+                        <li>
+                            <code><a class="shade">&lt;html&gt;&lt;html&gt;</a></code> — the <code><a class="shade">&lt;html&gt;</a></code> element. This element wraps all the content on the entire page and is sometimes known as the root element.
+                        </li>
+                        <li>
+                            <code><a class="shade">&lt;head&gt;&lt;head&gt;</a></code> — the <code><a class="shade">&lt;head&gt;</a></code> element. This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more.                       
+                        </li>
+                        <li>
+                            <code><a class="shade">&lt;meta charset="utf-8&gt;</a></code>— This element sets the character set your document should use to UTF-8 which includes most characters from the vast majority of written languages. Essentially, it can now handle any textual content you might put on it. There is no reason not to set this and it can help avoid some problems later on.
+                        </li>
+                        <li>
+                            <code><a class="shade">&lt;title&gt;&lt;title&gt;</a></code> — the <code><a class="shade">&lt;title&gt;</a></code> element. This sets the title of your page, which is the title that appears in the browser tab the page is loaded in. It is also used to describe the page when you bookmark/favorite it.                     
+                        </li>
+                        <li>
+                            <code><a class="shade">&lt;body&gt;&lt;body&gt;</a></code> — the <code><a class="shade">&lt;body&gt;</a></code> element. This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else.
+                        </li>
+                    </ul>
+                </div>
+            </header>
+        </section>
+        <section class="main-section" id="Modules">
+            <header>Modules</header>
+                <p>This topic contains the following modules, in a suggested order for working through them. You should definitely start with the first one.</p>
+
+                <h3>Introduction to HTML</h3>
+                <p>This module sets the stage, getting you used to important concepts and syntax, looking at applying HTML to text, how to create hyperlinks, and how to use HTML to structure a webpage.</p>
+                
+                <h3>Multimedia and embedding</h3>
+                <p>This module explores how to use HTML to include multimedia in your web pages, including the different ways that images can be included, and how to embed video, audio, and even entire other webpages.</p>
+                
+                <h3>HTML tables</h3>
+                <p>Representing tabular data on a webpage in an understandable, accessible way can be a challenge. This module covers basic table markup, along with more complex features such as implementing captions and summaries.</p>
+        </section>
+        <section class="main-section" id="Solving_common_HTML_problems">
+            <header>Solving common HTML problems</header>
+                <p>Use HTML to solve common problems provides links to sections of content explaining how to use HTML to solve very common problems when creating a webpage: dealing with titles, adding images or videos, emphasizing content, creating a basic form, etc.</p>
+        </section>
+        <section class="main-section" id="See_also">
+            <header>See also</header>
+                <h3>Web forms</h3>
+                <p>module provides a series of articles that will help you master the essentials of web forms. Web forms are a very powerful tool for interacting with users — most commonly they are used for collecting data from users, or allowing them to control a user interface. However, for historical and technical reasons it's not always obvious how to use them to their full potential. We'll cover all the essential aspects of Web forms including marking up their HTML structure, styling form controls, validating form data, and submitting data to the server.</p>
+                
+                <h3>HTML (HyperText Markup Language) on MDN</h3>
+                The main entry point for HTML reference documentation on MDN, including detailed element and attribute references — if you want to know what attributes an element has or what values an attribute has, for example, this is a great place to start.</p>
+        </section>
+    </main>
+  </body>
+</html>
