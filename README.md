@@ -1,2 +1,3 @@
-# Technical_Documentation_Page
- Technical detail of HTML languge
+# Technical Documentation Page
+ 
+This Technical documentation page based on HTML, is part of the coarse in Responsive Web Design Projects created by FreeCodeCamp.org.
